@@ -1,21 +1,22 @@
-import localFont from "next/font/local";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`items-center justify-center min-h-screen p-4`}
     >
+      <header className="w-full flex items-center justify-between">
+        <Image src="/images/logo.svg" width={100} height={100} alt="logo" />
+        <div className="flex gap-4">
+          <Link href="/home" className="text-[#524848] hover:text-[#e9ab53]">Home</Link>
+          <Link href="/new" className="text-[#524848] hover:text-[#e9ab53]">New</Link>
+          <Link href="/popular" className="text-[#524848] hover:text-[#e9ab53]">Popular</Link>
+          <Link href="/trending" className="text-[#524848] hover:text-[#e9ab53]">Trending</Link>
+          <Link href="/categories" className="text-[#524848] hover:text-[#e9ab53]">Categories</Link>
+        </div>
+
+      </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         
       </main>
