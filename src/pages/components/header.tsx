@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Nav from "../ui/nav";
+import Nav from "./nav";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
 export default function Header() {
