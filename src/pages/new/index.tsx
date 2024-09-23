@@ -1,7 +1,7 @@
 export default function New () {
     return (
-        <div>
+        <main className="w-[900px] grid gap-4 p-4 mx-auto h-auto">
             New
-        </div>
+        </main>
     )
 }

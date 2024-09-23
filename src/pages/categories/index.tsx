@@ -1,7 +1,7 @@
 export default function Categories () {
     return (
-        <div>
+        <main className="w-[900px] grid gap-4 p-4 mx-auto h-auto">
             Categories
-        </div>
+        </main>
     )
 }
