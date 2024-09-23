@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { inter } from "../font";
+import { inter } from "../../font";
 
 interface CardProps {
     imageSrc: string,

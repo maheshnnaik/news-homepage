@@ -1,4 +1,4 @@
-import { inter } from "./font";
+import { inter } from "../font";
 
 export default function Home() {
 	return (
